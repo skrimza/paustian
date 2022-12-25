@@ -68,7 +68,7 @@ header
 .first-screen
     padding-top: 13px
 .cover-studio
-    background: url('../images/header-img.png')
+    background: url('../images/header-img.jpg')
     background-size: cover
     position: relative
     height: 1084px
@@ -89,7 +89,7 @@ header
             font-size: 79px
 .cover-room
     background: url('../images/dressroom.png')
-    background-size: 75% 100%
+    background-size: contain
     height: 1053px
     background-repeat: no-repeat
     position: relative
@@ -125,7 +125,7 @@ header
     top: 20%
 .cover-chair
     background: url('../images/woman-on-chair.jpg')
-    background-size: 75% 100%
+    background-size: contain
     height: 1153px
     background-repeat: no-repeat
     position: relative
@@ -144,6 +144,33 @@ header
         font-size: 79px
         max-width: 770px
         margin: 0 auto
+.cover-wood
+    position: relative
+    background: url("../images/wood-armchair.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    height: 692px
+    z-index: 3
+    &__text
+        position: absolute
+        bottom: 3%
+        right: 50%
+        transform: translateX(50%)
+.street-cover
+    background: url("../images/man-with-chair.jpg")
+    background-position-x: right
+    background-repeat: no-repeat
+    background-size: contain
+    height: 1153px
+    position: relative
+    &__text
+        right: 28%
+.wool-armchair
+    right: 49.8%
+    top: 0
+.chandelier
+    right: 0
+    top: -20%
 
          
 
