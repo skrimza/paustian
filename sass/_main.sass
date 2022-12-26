@@ -85,8 +85,14 @@ header
         position: absolute
         left: 0
         bottom: 0
-        transform: translateY(50%)
         z-index: 3
+
+        transform: translateY(120%)
+        opacity: 0
+        transition: all 0.5s ease
+        &.active
+            transform: translateY(50%)
+            opacity: 1
         &-text
             text-align: center
             font-size: 79px
@@ -116,6 +122,14 @@ header
 .collection
     position: absolute
     width: 25%
+
+    transform: translateY(120%)
+    opacity: 0
+    transition: all 0.5s ease
+
+    &.active
+        transform: translateY(0)
+        opacity: 1
     &__img
         width: 100%
         object-fit: cover
@@ -127,28 +141,36 @@ header
         right: 50%
         transform: translateX(50%)
         text-align: center
-.chair
-    top: 0
-    right: 0
-.lamp
-    left: 0
-    top: 15%
+    &_chair
+        top: 0
+        right: 0
+    &_lamp
+        left: 0
+        top: 15%
+    &_flag
+        top: -20%
+        right: 25%
+    &_armchair
+        top: 0
+        right: 0
+    &_wool-armchair
+        right: 50%
+        top: 0
+    &_chandelier
+        right: 0
+        transform: translateY(-35%)
+    &_sofa
+        position: absolute
+        bottom: 0
+        left: 0
+        transform: translateY(5%)
 .cover-chair
-    // background: url('../images/woman-on-chair.jpg')
-    // background-size: contain
-    // height: 1153px
-    // background-repeat: no-repeat
+
     position: relative
     &__image
         width: 75%
         object-fit: cover
         display: block
-.flag
-    top: -20%
-    right: 25%
-.armchair
-    top: 0
-    right: 0
 .furniture
     background: #D2CCC0
     text-align: center
@@ -158,13 +180,20 @@ header
         font-size: 79px
         max-width: 770px
         margin: 0 auto
+
+        transform: translateY(120%)
+        opacity: 0
+        transition: all 0.5s ease
+        &.active
+            transform: translateY(0)
+            opacity: 1
 .cover-wood
     position: relative
-    // background: url("../images/wood-armchair.jpg")
-    // background-repeat: no-repeat
-    // background-size: cover
-    // height: 692px
     z-index: 3
+
+    transform: translateY(120%)
+    opacity: 0
+    transition: all 0.5s ease
     &__image
         object-fit: cover
         width: 100%
@@ -183,13 +212,8 @@ header
         width: 75%
         object-fit: cover
     &__text
-                
-.wool-armchair
-    right: 50%
-    top: 0
-.chandelier
-    right: 0
-    transform: translateY(-35%)
+        bottom: 17% !important      
+
 .cover-sofa
     padding-bottom: 204px
 .cover-sofa
@@ -211,10 +235,7 @@ header
         bottom: 5%
 
 .sofa
-    position: absolute
-    bottom: 0
-    left: 0
-    transform: translateY(5%)
+    
 .model-sofa__text
     color: #ffffff            
 .footer
@@ -246,6 +267,7 @@ header
     &-column
         display: flex
         flex-direction: column
+        flex-grow: 1
         &__text
             font-size: 14px
             color: #000
@@ -257,6 +279,9 @@ header
             font-size: 14px
             &>span
                 color: #AAAAAA
+.swiper
+    width: 100%
+    height: 1467px
     
 
 

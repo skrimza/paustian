@@ -463,8 +463,15 @@ header {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translateY(50%);
   z-index: 3;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.cover-studio__block.active {
+  transform: translateY(50%);
+  opacity: 1;
 }
 
 .cover-studio__block-text {
@@ -502,6 +509,14 @@ header {
 .collection {
   position: absolute;
   width: 25%;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.collection.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .collection__img {
@@ -519,14 +534,41 @@ header {
   text-align: center;
 }
 
-.chair {
+.collection_chair {
   top: 0;
   right: 0;
 }
 
-.lamp {
+.collection_lamp {
   left: 0;
   top: 15%;
+}
+
+.collection_flag {
+  top: -20%;
+  right: 25%;
+}
+
+.collection_armchair {
+  top: 0;
+  right: 0;
+}
+
+.collection_wool-armchair {
+  right: 50%;
+  top: 0;
+}
+
+.collection_chandelier {
+  right: 0;
+  transform: translateY(-35%);
+}
+
+.collection_sofa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(5%);
 }
 
 .cover-chair {
@@ -537,16 +579,6 @@ header {
   width: 75%;
   object-fit: cover;
   display: block;
-}
-
-.flag {
-  top: -20%;
-  right: 25%;
-}
-
-.armchair {
-  top: 0;
-  right: 0;
 }
 
 .furniture {
@@ -560,11 +592,22 @@ header {
   font-size: 79px;
   max-width: 770px;
   margin: 0 auto;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.furniture__title.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .cover-wood {
   position: relative;
   z-index: 3;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .cover-wood__image {
@@ -592,14 +635,8 @@ header {
   object-fit: cover;
 }
 
-.wool-armchair {
-  right: 50%;
-  top: 0;
-}
-
-.chandelier {
-  right: 0;
-  transform: translateY(-35%);
+.street-cover__text {
+  bottom: 17% !important;
 }
 
 .cover-sofa {
@@ -629,13 +666,6 @@ header {
 .cover-sofa__text {
   transform: translateX(50%);
   bottom: 5%;
-}
-
-.sofa {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateY(5%);
 }
 
 .model-sofa__text {
@@ -680,6 +710,7 @@ header {
 .footer-column {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .footer-column__text {
@@ -697,5 +728,10 @@ header {
 
 .footer-column__location > span {
   color: #AAAAAA;
+}
+
+.swiper {
+  width: 100%;
+  height: 1467px;
 }
 /*# sourceMappingURL=style.css.map */

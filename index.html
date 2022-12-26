@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paustian</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -115,7 +116,24 @@
     <section id="first-screen" class="first-screen">
         <div class="container">
             <div class="cover-studio">
-                <img src="images/header-img.jpg" alt="header-img" class="cover-studio__image">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/header-img.jpg" alt="header-img" height="1467px" class="cover-studio__image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/header-bgtwo.jpg" alt="header-img" height="1467px" class="cover-studio__image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/header-bgthree.jpg" alt="header-img" height="1467px" class="cover-studio__image">
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="cover-studio__block">
                     <p class="cover-studio__block-text">
                         Indretnings-rådgivning
@@ -124,7 +142,7 @@
             </div>
             <div class="cover-room">
                 <img src="images/dressroom.jpg" alt="dressroom" class="cover-room__image">
-                <div class="collection chair">
+                <div class="collection collection_chair">
                     <img src="images/chair.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -136,12 +154,13 @@
                         <p class="designer">
                             Charles & Ray Eames
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 50.600 00 kr.
                         </p>
                     </div>
                 </div>
-                <div class="collection lamp">
+                <div class="collection collection_lamp">
                     <img src="images/lamp.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -153,6 +172,7 @@
                         <p class="designer">
                             Alvar Aalto
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 3.810,00 kr.
                         </p>
@@ -164,7 +184,7 @@
             </div>
             <div class="cover-chair">
                 <img src="images/woman-on-chair.jpg" alt="" class="cover-chair__image">
-                <div class="collection flag">
+                <div class="collection collection_flag">
                     <img src="images/flag.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -176,12 +196,13 @@
                         <p class="designer">
                             Svend Aage Holm-Sørensen
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 1.999,00 kr.
                         </p>
                     </div>
                 </div>
-                <div class="collection armchair">
+                <div class="collection collection_armchair">
                     <img src="images/armchair.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -193,6 +214,7 @@
                         <p class="designer">
                             Alvar Aalto
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 30.750,00 kr.
                         </p>
@@ -203,9 +225,9 @@
                 </p>
             </div>
             <div class="furniture">
-                <p class="furniture__title">
+                <h1 class="furniture__title">
                     Paustian Furniture Collection
-                </p>
+                </h1>
             </div>
             <div class="cover-wood">
                 <img src="images/wood-armchair.jpg" alt="" class="cover-wood__image">
@@ -215,7 +237,7 @@
             </div>
             <div class="street-cover">
                 <img src="images/man-with-chair.jpg" alt="image" class="street-cover__image">
-                <div class="collection wool-armchair">
+                <div class="collection collection_wool-armchair">
                     <img src="images/wool-armchair.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -227,12 +249,13 @@
                         <p class="designer">
                             Hans Olsen
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 31.999,00 kr.
                         </p>
                     </div>
                 </div>
-                <div class="collection chandelier">
+                <div class="collection collection_chandelier">
                     <img src="images/chandelier.jpg" alt="" class="collection__img">
                     <div class="collection__text">
                         <p class="model">
@@ -244,12 +267,13 @@
                         <p class="designer">
                             Max Gunawan
                         </p>
+                        <br/>
                         <p class="series">
                             Fra 2.499,00 kr.
                         </p>
                     </div>
                 </div>
-                <div class="collection sofa">
+                <div class="collection collection_sofa">
                     <img src="images/treefur.jpg" alt="" class="collection__img">
                     <div class="collection__text model-sofa__text">
                         <p class="model">
@@ -261,6 +285,7 @@
                         <p class="designer">
                             Charles & Ray Eames
                         </p>
+                        <br/>
                         <p class="series ">
                             Fra 53.830,00 kr.
                         </p>
@@ -296,6 +321,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js">
+    </script>
 </body>
 
 </html>
