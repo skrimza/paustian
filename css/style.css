@@ -445,11 +445,13 @@ header {
 }
 
 .cover-studio {
-  background: url("../images/header-img.jpg");
-  background-size: cover;
   position: relative;
-  height: 1084px;
   margin-bottom: 5px;
+}
+
+.cover-studio__image {
+  object-fit: cover;
+  width: 100%;
 }
 
 .cover-studio__block {
@@ -471,13 +473,14 @@ header {
 }
 
 .cover-room {
-  background: url("../images/dressroom.png");
-  background-size: contain;
-  height: 1053px;
-  background-repeat: no-repeat;
   position: relative;
   margin-bottom: 41px;
   z-index: 2;
+}
+
+.cover-room__image {
+  object-fit: cover;
+  width: 75%;
 }
 
 .cover-room__text {
@@ -498,6 +501,12 @@ header {
 
 .collection {
   position: absolute;
+  width: 25%;
+}
+
+.collection__img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .collection__text {
@@ -517,20 +526,22 @@ header {
 
 .lamp {
   left: 0;
-  top: 20%;
+  top: 15%;
 }
 
 .cover-chair {
-  background: url("../images/woman-on-chair.jpg");
-  background-size: contain;
-  height: 1153px;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+.cover-chair__image {
+  width: 75%;
+  object-fit: cover;
+  display: block;
 }
 
 .flag {
   top: -20%;
-  right: 25.2%;
+  right: 25%;
 }
 
 .armchair {
@@ -553,11 +564,13 @@ header {
 
 .cover-wood {
   position: relative;
-  background: url("../images/wood-armchair.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 692px;
   z-index: 3;
+}
+
+.cover-wood__image {
+  object-fit: cover;
+  width: 100%;
+  display: block;
 }
 
 .cover-wood__text {
@@ -568,25 +581,121 @@ header {
 }
 
 .street-cover {
-  background: url("../images/man-with-chair.jpg");
-  background-position-x: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 1153px;
   position: relative;
+  overflow: hidden;
+  padding-bottom: 229px;
 }
 
-.street-cover__text {
-  right: 28%;
+.street-cover__image {
+  float: right;
+  width: 75%;
+  object-fit: cover;
 }
 
 .wool-armchair {
-  right: 49.8%;
+  right: 50%;
   top: 0;
 }
 
 .chandelier {
   right: 0;
-  top: -20%;
+  transform: translateY(-35%);
+}
+
+.cover-sofa {
+  padding-bottom: 204px;
+}
+
+.cover-sofa {
+  position: relative;
+}
+
+.cover-sofa__block {
+  overflow: hidden;
+  max-height: 1700px;
+  height: 100%;
+  width: 75%;
+  position: relative;
+}
+
+.cover-sofa__block-image {
+  position: relative;
+  bottom: 0;
+  transform: translate(0, -9%);
+  width: 100%;
+  max-width: 1400px;
+}
+
+.cover-sofa__text {
+  transform: translateX(50%);
+  bottom: 5%;
+}
+
+.sofa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(5%);
+}
+
+.model-sofa__text {
+  color: #ffffff;
+}
+
+.footer__title {
+  font-size: 30px;
+  color: #444444;
+  font-weight: 700;
+  max-width: 485px;
+  margin-bottom: 36px;
+}
+
+.footer-par {
+  text-decoration-line: underline;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-contact {
+  color: #000;
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-row {
+  border-top: 1px solid #EAEAEA;
+  display: flex;
+  padding-top: 43px;
+  padding-bottom: 73px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column__text {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-column__location {
+  font-weight: 400;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column__location > span {
+  color: #AAAAAA;
 }
 /*# sourceMappingURL=style.css.map */

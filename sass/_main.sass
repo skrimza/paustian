@@ -68,11 +68,14 @@ header
 .first-screen
     padding-top: 13px
 .cover-studio
-    background: url('../images/header-img.jpg')
-    background-size: cover
+    // background: url('../images/header-img.jpg')
+    // background-size: cover
     position: relative
-    height: 1084px
+    // height: 1084px
     margin-bottom: 5px
+    &__image
+        object-fit: cover
+        width: 100%
     &__block
         max-width: 690px
         width: 100%
@@ -88,13 +91,16 @@ header
             text-align: center
             font-size: 79px
 .cover-room
-    background: url('../images/dressroom.png')
-    background-size: contain
-    height: 1053px
-    background-repeat: no-repeat
+    // background: url('../images/dressroom.png')
+    // background-size: contain
+    // height: 1053px
+    // background-repeat: no-repeat
     position: relative
     margin-bottom: 41px
     z-index: 2
+    &__image
+        object-fit: cover
+        width: 75%
     &__text
         font-size: 18px
         color: #FFFFFF
@@ -109,6 +115,10 @@ header
     right: 50%
 .collection
     position: absolute
+    width: 25%
+    &__img
+        width: 100%
+        object-fit: cover
     &__text
         bottom: 0
         font-size: 13px
@@ -122,16 +132,20 @@ header
     right: 0
 .lamp
     left: 0
-    top: 20%
+    top: 15%
 .cover-chair
-    background: url('../images/woman-on-chair.jpg')
-    background-size: contain
-    height: 1153px
-    background-repeat: no-repeat
+    // background: url('../images/woman-on-chair.jpg')
+    // background-size: contain
+    // height: 1153px
+    // background-repeat: no-repeat
     position: relative
+    &__image
+        width: 75%
+        object-fit: cover
+        display: block
 .flag
     top: -20%
-    right: 25.2%
+    right: 25%
 .armchair
     top: 0
     right: 0
@@ -146,31 +160,103 @@ header
         margin: 0 auto
 .cover-wood
     position: relative
-    background: url("../images/wood-armchair.jpg")
-    background-repeat: no-repeat
-    background-size: cover
-    height: 692px
+    // background: url("../images/wood-armchair.jpg")
+    // background-repeat: no-repeat
+    // background-size: cover
+    // height: 692px
     z-index: 3
+    &__image
+        object-fit: cover
+        width: 100%
+        display: block
     &__text
         position: absolute
         bottom: 3%
         right: 50%
         transform: translateX(50%)
 .street-cover
-    background: url("../images/man-with-chair.jpg")
-    background-position-x: right
-    background-repeat: no-repeat
-    background-size: contain
-    height: 1153px
     position: relative
+    overflow: hidden
+    padding-bottom: 229px
+    &__image
+        float: right
+        width: 75%
+        object-fit: cover
     &__text
-        right: 28%
+                
 .wool-armchair
-    right: 49.8%
+    right: 50%
     top: 0
 .chandelier
     right: 0
-    top: -20%
+    transform: translateY(-35%)
+.cover-sofa
+    padding-bottom: 204px
+.cover-sofa
+    position: relative
+    &__block
+        overflow: hidden
+        max-height: 1700px
+        height: 100%
+        width: 75%
+        position: relative
+        &-image
+            position: relative
+            bottom: 0
+            transform: translate(0, -9%)
+            width: 100%
+            max-width: 1400px
+    &__text
+        transform: translateX(50%)
+        bottom: 5%
 
-         
+.sofa
+    position: absolute
+    bottom: 0
+    left: 0
+    transform: translateY(5%)
+.model-sofa__text
+    color: #ffffff            
+.footer
+    &__title
+        font-size: 30px
+        color: #444444
+        font-weight: 700
+        max-width: 485px
+        margin-bottom: 36px
+    &-par
+        text-decoration-line: underline
+        font-size: 14px
+        font-weight: 700
+        margin-bottom: 20px
+    &-contact
+        color: #000
+        font-size: 29px
+        font-weight: 700
+        margin-bottom: 15px
+    &-link
+        color: #000
+        font-size: 14px
+        font-weight: 700
+    &-row
+        border-top: 1px solid #EAEAEA
+        display: flex
+        padding-top: 43px
+        padding-bottom: 73px
+    &-column
+        display: flex
+        flex-direction: column
+        &__text
+            font-size: 14px
+            color: #000
+            font-weight: 700
+            margin-bottom: 20px
+        &__location
+            font-weight: 400
+            color: #000
+            font-size: 14px
+            &>span
+                color: #AAAAAA
+    
+
 
